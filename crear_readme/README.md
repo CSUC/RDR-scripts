@@ -2,7 +2,7 @@
 Per a qualsevol consulta sobre el codi, poseu-vos en contacte amb rdr-contacte@csuc.cat
 
 ## Descripció
-Aquest script està dissenyat per interactuar amb repositoris Dataverse, específicament per exportar metadades de conjunts de dades identificats amb Identificadors d'Objectes Digitals (DOI). Utilitza la llibreria pyDataverse per accedir i recuperar metadades, que es poden utilitzar per generar un fitxer README proporcionant informació detallada sobre els conjunts de dades.
+Aquest script està dissenyat per interactuar amb el Repositori de dades de recerca (https://dataverse.csuc.cat/), específicament per exportar metadades de conjunts de dades identificats amb Identificadors d'Objectes Digitals (DOI). Utilitza la llibreria pyDataverse per accedir i extreure metadades, que s'utilitzen per generar un fitxer README proporcionant informació detallada sobre els conjunts de dades.
 
 ## Requisits
 - Python 3.x
@@ -17,17 +17,17 @@ Aquest script està dissenyat per interactuar amb repositoris Dataverse, especí
     - Inicialitza l'URL base de la instància Dataverse.
     - Autentica l'API amb el token proporcionat.
 
-3. **Exporta Metadades**:
+3. **Exportar Metadades**:
     - Recupera metadades per al conjunt de dades especificat.
     - Extreu diverses categories de metadades com detalls de citació, informació geoespacial, metadades de ciències socials, etc.
     - Extreu metadades dels fitxers associats al conjunt de dades.
 
-4. **Crea README**:
+4. **Crear README**:
     - Genera un fitxer README que conté informació detallada sobre el conjunt de dades.
     - Inclou seccions per a informació general, informació d'accés, tipus de metadades i revisió de fitxers.
     - Escriu les metadades extretes al fitxer README.
 
-5. **Descarrega README**:
+5. **Descarregar README**:
     - Proporciona opcions per descarregar el fitxer README generat.
     - En Google Colab, es proporciona un botó de descàrrega.
     - En Jupyter Notebook, es proporciona un enllaç de descàrrega.
