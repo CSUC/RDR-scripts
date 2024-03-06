@@ -1,5 +1,7 @@
-[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/clarallebot/test_readme_scriptsCSUC/blob/main/README.md)
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/clarallebot/test_readme_scriptsCSUC/blob/main/README.en.md)
+[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/README_ENG.md)
+
+
 
 # RDR-scripts
 
