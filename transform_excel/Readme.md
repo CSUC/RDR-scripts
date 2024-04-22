@@ -1,6 +1,6 @@
 # Transformar fitxer en format Excel a format CSV
 
-Per a qualsevol consulta sobre el codi, contacta amb [la_teu_adreça_de_correu_electrònic@example.com]
+Per a qualsevol consulta sobre el codi, contacta amb rdr-contacte@csuc.cat 
 
 ## Visió general
 Aquest script està dissenyat per convertir fitxers d'Excel a format CSV. Permet als usuaris carregar un fitxer d'Excel (.xlsx), que després es processa per generar fitxers CSV per a cada full de càlcul del llibre d'Excel. L'script ofereix opcions per separar taules a cada full de càlcul en diferents fitxers CSV o convertir cada full en un únic fitxer CSV.
