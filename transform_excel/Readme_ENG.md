@@ -1,6 +1,6 @@
 # Tranform Excel format file to CSV format
 
-For any queries regarding the code, contact [your_contact_email@example.com]
+For any queries regarding the code, contact rdr-contacte@csuc.cat 
 
 ## Overview
 This script is designed to convert Excel files to CSV format. It allows users to upload an Excel file (.xlsx), which is then processed to generate CSV files for each sheet in the Excel workbook. The script offers options to separate tables in each sheet into different CSV files or convert each sheet into a single CSV file.
