@@ -1,4 +1,4 @@
-# Script to create a Readme file for a dataset in Dataverse
+t# Script to create a Readme file for a dataset in Dataverse
 For any queries regarding the code, contact rdr-contacte@csuc.cat
 
 ## Overview
@@ -33,7 +33,7 @@ This script is designed to interact with Dataverse repositories, specifically fo
     - In Jupyter Notebook, a download link is provided.
 
 ## File Structure
-- `Readme_script.ipynb`: The main script for exporting metadata and generating the README file.
+- `create_Readme_script.ipynb`: The main script for exporting metadata and generating the README file.
 - `Readme.txt`: The generated Readme file containing detailed information about the dataset.
 
 ## Usage Example
