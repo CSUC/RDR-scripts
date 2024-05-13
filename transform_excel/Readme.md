@@ -23,7 +23,7 @@ Aquest script està dissenyat per convertir fitxers d'Excel a format CSV. Permet
     - Un cop completada la conversió, es descarregarà automàticament un fitxer zip que conté els fitxers CSV generats.
 
 ## Estructura de fitxers
-- `Convertidor_Excel_a_CSV.ipynb`: El script principal per convertir fitxers d'Excel a format CSV.
+- `transform_excel.ipynb`: El script principal per convertir fitxers d'Excel a format CSV.
 - `exemple.xlsx`: Exemple de fitxer Excel per a propòsits de prova.
 - `exemple_sortida.zip`: Exemple de sortida que conté els fitxers CSV generats.
 
