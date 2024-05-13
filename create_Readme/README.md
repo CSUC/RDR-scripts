@@ -33,7 +33,7 @@ Aquest script està dissenyat per interactuar amb el Repositori de dades de rece
     - En Jupyter Notebook, es proporciona un enllaç de descàrrega.
 
 ## Estructura de Fitxers
-- `create_Readme_script`: El script principal per exportar metadades i generar el fitxer README.
+- `create_Readme_script.ipynb`: El script principal per exportar metadades i generar el fitxer README.
 - `README.md`: El fitxer README generat que conté informació detallada sobre el conjunt de dades.
 
 ## Exemple d'Ús
