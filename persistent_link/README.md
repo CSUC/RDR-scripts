@@ -6,7 +6,6 @@ Per a qualsevol consulta sobre el codi, poseu-vos en contacte amb rdr-contacte@c
 
 Aquest script de Python està dissenyat per extreure els enllaços persistents dels fitxers en conjunts de dades allotjats a Dataverse. Els enllaços persistents són útils per referenciar dades específiques de manera constant, fins i tot si les dades es mouen o s'actualitzen en el futur.
 
-
 ## Requisits
 
 - Python 3.x
@@ -24,7 +23,7 @@ Aquest script de Python està dissenyat per extreure els enllaços persistents d
 
 ## Estructura de Fitxers
 - `persistent_link.ipynb`: El script principal per exportar metadades i generar el fitxer README.
-- `README.md`: El fitxer README generat que conté informació detallada sobre el conjunt de dades.
+- `excel_name.xlsx`: El fitxer excel amb nom excel_name generat que conté informació detallada sobre els links persistents conjunt de dades.
 
 ## Exemple d'Ús
 ```python
