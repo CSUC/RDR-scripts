@@ -23,7 +23,7 @@ This script is designed to convert Excel files to CSV format. It allows users to
     - Once the conversion is complete, a zip file containing the CSV files will be automatically downloaded.
 
 ## File Structure
-- `Excel_to_CSV_Converter.ipynb`: The main script for converting Excel files to CSV format.
+- `transform_Excel.ipynb`: The main script for converting Excel files to CSV format.
 - `example.xlsx`: Example Excel file for testing purposes.
 - `example_output.zip`: Example output containing the generated CSV files.
 
