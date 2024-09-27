@@ -1,5 +1,5 @@
-[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/README.md)
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/README_ENG.md)
+[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/multiple_datasets_metadata/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/multiple_datasets_metadata/README_ENG.md)
 # Extreure metadades de multiples datasets per institució
 
 Aquest script permet processar i agregar metadades de diferents institucions i categories com citacions, metadades geoespacials, socials, astronòmiques, biomèdiques, revistes i altres. Els resultats s'exporten en un fitxer Excel que es pot descarregar automàticament.
