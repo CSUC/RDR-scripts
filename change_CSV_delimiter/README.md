@@ -1,3 +1,6 @@
+[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/change_CSV_delimiter/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/change_CSV_delimiter/README_ENG.md)
+
 # Convertidor de Delimitador CSV
 
 Per a qualsevol consulta sobre el codi, contacteu amb [rdr-contacte@csuc.cat](mailto:rdr-contacte@csuc.cat)
