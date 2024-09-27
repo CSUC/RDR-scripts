@@ -1,4 +1,4 @@
-# Script d'Exportació Automàtica de Metadades
+# Script d'Exportació Automàtica de Metadades per dataset
 
 Per a qualsevol consulta relacionada amb el codi, poseu-vos en contacte amb rdr-contacte@csuc.cat.
 
