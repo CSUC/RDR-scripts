@@ -46,8 +46,8 @@ L'script realitza les següents tasques:
 
 | DOI                                | Institució | publicationRelationType | publicationCitation | publicationIDType | publicationIDNumber | publicationURL |
 |------------------------------------|-------------|-------------------------|---------------------|--------------------|----------------------|----------------|
-| https://doi.org/10.34810/data123   | UB          | ...                     | ...                 | ...                | ...                  | ...            |
-| https://doi.org/10.34810/data124   | UAB         | ...                     | ...                 | ...                | ...                  | ...            |
+| https://doi.org/10.34810/dataXXX   | UB          | ...                     | ...                 | ...                | ...                  | ...            |
+| https://doi.org/10.34810/dataXXX   | UAB         | ...                     | ...                 | ...                | ...                  | ...            |
 
 ## Limitacions i Consideracions
 
