@@ -1,3 +1,5 @@
+[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/REVISAT/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/REVISAT/README_ENG.md)
 # Dataset Evaluation Script (REVISAT / CURATED)
 For any queries regarding the code, contact rdr-contacte@csuc.cat
 
