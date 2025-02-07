@@ -1,3 +1,5 @@
+[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/extract_metadata/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/extract_metadata/README_ENG.txt)
 # Script d'Exportació Automàtica de Metadades per dataset
 
 Per a qualsevol consulta relacionada amb el codi, poseu-vos en contacte amb rdr-contacte@csuc.cat.
