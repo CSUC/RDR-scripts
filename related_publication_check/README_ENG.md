@@ -1,5 +1,5 @@
-[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/REVISAT/README.md)
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/REVISAT/README_ENG.md)
+[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/related_publication_check/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/related_publication_check/README_ENG.md)
 # Script for Generating Metadata for Publications (Related Publication Study)
 For any inquiries regarding the code, please contact rdr-contacte@csuc.cat
 
