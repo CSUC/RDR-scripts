@@ -4,7 +4,7 @@
 Per a qualsevol consulta sobre el codi, poseu-vos en contacte amb rdr-contacte@csuc.cat
 
 ## Descripció
-Aquest script està dissenyat per interactuar amb el Repositori de dades de recerca (https://dataverse.csuc.cat/), específicament per exportar metadades de conjunts de dades identificats amb Identificadors d'Objectes Digitals (DOI). Utilitza la llibreria pyDataverse per accedir i extreure metadades, que s'utilitzen per generar un fitxer README proporcionant informació detallada sobre els conjunts de dades.
+Aquest script està dissenyat per interactuar amb el Repositori de dades de recerca (https://dataverse.csuc.cat/), específicament per exportar metadades de conjunts de dades identificats amb Identificadors d'Objectes Digitals (DOI). Utilitza la llibreria pyDataverse per accedir i extreure metadades, que s'utilitzen per generar un fitxer README proporcionant informació detallada sobre els conjunts de dades. NO llegeix les metadades Darwin Core.
 
 ## Requisits
 - Python 3.x
