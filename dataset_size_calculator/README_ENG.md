@@ -1,11 +1,11 @@
 [![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/dataset_size_calculator/README.md)  
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/dataset_size_calculator/README_ENG.md)  
 
-# Script to Calculate Dataset Size in Dataverse  
+# Script to Calculate Datasets Size of dataverses in Dataverse  
 For any inquiries about the code, contact rdr-contacte@csuc.cat  
 
 ## Description  
-This script calculates the total size of a dataset hosted in the Research Data Repository (https://dataverse.csuc.cat/). It uses the Dataverse API to retrieve the size of all files associated with a specific DOI and returns the total size in bytes, KB, MB, or GB.  
+This script calculates the total size of a datasets hosted in the Research Data Repository (https://dataverse.csuc.cat/). It uses the Dataverse API to retrieve the size of all files associated with a specific DOI and returns the total size in bytes, KB, MB, or GB.  
 
 ## Requirements  
 - Python 3.x  
