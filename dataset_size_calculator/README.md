@@ -43,7 +43,11 @@ token = 'XXX-XXXX-XXXXX-XXXXX'
 
 # Executa la funció per calcular la mida
 L'script produeix un fitxer excel amb el nom  mida_datasets.xlsx i conté la següent informació:
-| DOI  | Institution | Original Size (Bytes) | Archival Size (Bytes) | Formatted Original Size | Unit (Original Size) | Formatted Archival Size | Unit (Archival Size) | |------|------------|----------------------|----------------------|------------------------|----------------------|------------------------|----------------------| | doi1 | Example Institution | 1024000 | 512000 | 1.00 | MB | 500.00 | KB |
+
+| DOI  | Institution          | Original Size (Bytes) | Archival Size (Bytes) | Formatted Original Size | Unit (Original Size) | Formatted Archival Size | Unit (Archival Size) |
+|------|----------------------|----------------------|----------------------|------------------------|----------------------|------------------------|----------------------|
+| doi1 | Example Institution | 1024000             | 512000               | 1.00                   | MB                   | 500.00                 | KB                   |
+
 
 On:
        'Original Size (Bytes)' és la mida en bytes del conjunt de fitxers del dataset en el seu format original.
