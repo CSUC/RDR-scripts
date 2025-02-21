@@ -48,9 +48,10 @@ L'script produeix un fitxer excel amb el nom  mida_datasets.xlsx i conté la seg
 |------|----------------------|----------------------|----------------------|------------------------|----------------------|------------------------|----------------------|
 | doi1 | Example Institution | 1024000             | 512000               | 1.00                   | MB                   | 500.00                 | KB                   |
 
-
 On:
-    - 'Original Size (Bytes)' és la mida en bytes del conjunt de fitxers del dataset en el seu format original.
-    - 'Archival Size (Bytes)' és la mida en bytes del conjunt de fitxers del dataset en el seu format tranformat durant la ingesta.
-    - 'Formatted Original Size' és la mida del conjunt de fitxers del dataset en el seu format original amb la unitat de mesura indicada a Unit (Original Size).
-    - 'Formatted Archival Size' és la mida del conjunt de fitxers del dataset en el seu format tranformat durant la ingesta amb la unitat de mesura indicada a Unit (Archival Size).
+
+- **Original Size (Bytes)**: és la mida en bytes del conjunt de fitxers del dataset en el seu format original.
+- **Archival Size (Bytes)**: és la mida en bytes del conjunt de fitxers del dataset en el seu format tranformat durant la ingesta.
+- **Formatted Original Size**: és la mida del conjunt de fitxers del dataset en el seu format original amb la unitat de mesura indicada a *Unit (Original Size)*.
+- **Formatted Archival Size**: és la mida del conjunt de fitxers del dataset en el seu format tranformat durant la ingesta amb la unitat de mesura indicada a *Unit (Archival Size)*.
+
