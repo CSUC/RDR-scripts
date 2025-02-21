@@ -5,7 +5,7 @@
 Per a qualsevol consulta sobre el codi, poseu-vos en contacte amb rdr-contacte@csuc.cat  
 
 ## Descripció  
-Aquest script permet calcular la mida total d'un conjunt de dades (dataset) allotjat al Repositori de Dades de Recerca (https://dataverse.csuc.cat/). Utilitza l'API de Dataverse per obtenir la mida de tots els fitxers associats a un DOI específic i retorna la mida total en bytes, KB, MB o GB.  
+Aquest script permet calcular la mida total dels conjunt de dades (dataset) allotjat a una instància del Repositori de Dades de Recerca (https://dataverse.csuc.cat/). Utilitza l'API de Dataverse per obtenir la mida de tots els fitxers associats a un DOI específic i retorna la mida total en bytes, KB, MB o GB.  
 
 ## Requisits  
 - Python 3.x  
