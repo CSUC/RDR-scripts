@@ -37,7 +37,7 @@ Aquest script permet calcular la mida total d'un conjunt de dades (dataset) allo
 - `README.md`: Fitxer de documentació del script.  
 
 ## Exemple d'Ús  
-```python
+
 # Estableix token
 token = 'XXX-XXXX-XXXXX-XXXXX'
 
