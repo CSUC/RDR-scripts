@@ -5,7 +5,7 @@
 Per a qualsevol consulta sobre el codi, poseu-vos en contacte amb rdr-contacte@csuc.cat  
 
 ## Descripció  
-Aquest script permet calcular la mida total dels conjunt de dades (dataset) allotjat a una instància del Repositori de Dades de Recerca (https://dataverse.csuc.cat/). Utilitza l'API de Dataverse per obtenir la mida de tots els fitxers associats a un DOI específic i retorna la mida total en bytes, KB, MB o GB.  
+Aquest script permet calcular la mida total dels conjunt de dades (datasets) allotjat a una instància del Repositori de Dades de Recerca (https://dataverse.csuc.cat/). Utilitza l'API de Dataverse per obtenir la mida de tots els fitxers associats als datasets d'una instància i retorna la mida total en bytes, KB, MB o GB.  
 
 ## Requisits  
 - Python 3.x  
@@ -14,26 +14,24 @@ Aquest script permet calcular la mida total dels conjunt de dades (dataset) allo
 ## Ús  
 
 1. **Paràmetres d'Entrada**:  
-    - DOI: Identificador Digital de l'Objecte (DOI) del conjunt de dades.  
     - Token: Token d'autenticació per accedir al repositori Dataverse.  
 
 2. **Configuració**:  
     - Especifica l'URL base de la instància Dataverse.  
-    - Proporciona el DOI del dataset i el token d'autenticació.  
 
 3. **Obtenció de la mida del Dataset**:  
-    - Recupera la informació de tots els fitxers associats al DOI especificat.  
-    - Suma la mida de cada fitxer per obtenir la mida total del dataset.  
+    - Recupera la informació de totes les mides els fitxers als datasets d'una instància.  
+    - Suma la mida de cada fitxer per obtenir la mida total dels datasets.  
 
 4. **Format de sortida**:  
     - Mostra la mida total en diferents unitats (bytes, KB, MB, GB) per facilitar la interpretació.  
 
 5. **Opcions de Descàrrega**:  
-    - Si s'executa en Google Colab, es pot descarregar un informe amb la mida del dataset.  
+    - Si s'executa en Google Colab, es pot descarregar un informe amb les mides del datasets.  
     - També es pot executar en altres entorns Python com Jupyter Notebook o localment.  
 
 ## Estructura de Fitxers  
-- `dataset_size_calculator.ipynb`: Script per calcular la mida d'un dataset.  
+- `dataset_size_calculator.ipynb`: Script per calcular les mides dels datasets.  
 - `README.md`: Fitxer de documentació del script.  
 
 ## Exemple d'Ús  
@@ -47,6 +45,7 @@ L'script produeix un fitxer excel amb el nom  mida_datasets.xlsx i conté la seg
 | DOI  | Institution          | Original Size (Bytes) | Archival Size (Bytes) | Formatted Original Size | Unit (Original Size) | Formatted Archival Size | Unit (Archival Size) |
 |------|----------------------|----------------------|----------------------|------------------------|----------------------|------------------------|----------------------|
 | doi1 | Example Institution | 1024000             | 512000               | 1.00                   | MB                   | 500.00                 | KB                   |
+| doi2 | Example Institution | 598424             | 896771               | 584.4                  | KB                   | 875.75                 | KB                   |
 
 On:
 
