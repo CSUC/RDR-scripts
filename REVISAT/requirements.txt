@@ -1,0 +1,8 @@
+pyDataverse
+selenium
+datetime
+numpy
+pyDataverse
+ipywidgets
+nbformat
+argparse
