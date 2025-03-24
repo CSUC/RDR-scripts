@@ -43,7 +43,7 @@ Aquest script està dissenyat per interactuar amb el Repositori de dades de rece
 ## Exemple d'Ús
 ```python
 # Estableix el DOI i el token
-doi = 'doi:10.34810/dataXXX'
+doi = 'XYZ'
 token = 'el_teul_propi_token'
 
 # Executa l'script
