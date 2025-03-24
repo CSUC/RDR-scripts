@@ -43,7 +43,7 @@ This script is designed to interact with Dataverse repositories, specifically fo
 ## Usage Example
 ```python
 # Set DOI and token
-doi = 'doi:10.34810/dataXXX'
+doi = 'XYZ'
 token = 'your_token_here'
 
 # Run the script
