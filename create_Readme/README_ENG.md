@@ -1,5 +1,7 @@
 [![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/create_Readme/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/create_Readme/README_ENG.md)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/create_Readme/create_Readme_script.ipynb)
+
 # Script to create a Readme file for a dataset in Dataverse
 For any queries regarding the code, contact rdr-contacte@csuc.cat
 
