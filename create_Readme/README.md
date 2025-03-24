@@ -44,6 +44,6 @@ Aquest script està dissenyat per interactuar amb el Repositori de dades de rece
 ```python
 # Estableix el DOI i el token
 doi = 'XYZ'
-token = 'el_teul_propi_token'
+token = 'el_teu_propi_token'
 
 # Executa l'script
