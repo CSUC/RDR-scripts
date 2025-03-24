@@ -1,5 +1,6 @@
 [![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/metrics/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/metrics/README_ENG.md)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/metrics/metrics_script.ipynb)
 # Script per extreure mètriques dels datasets d'una instància
 
 Aquest script permet extreure mètriques dels datasets d'una instància de Dataverse utilitzant l'API de Dataverse. Les mètriques inclouen visualitzacions totals, visualitzacions úniques, descàrregues totals, descàrregues úniques i citacions.
