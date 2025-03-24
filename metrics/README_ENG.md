@@ -1,5 +1,7 @@
 [![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/metrics/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/metrics/README_ENG.md)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/metrics/metrics_script.ipynb)
+
 # Script to Extract Metrics from Datasets in a Dataverse Instance
 
 This script allows you to extract metrics from datasets in a Dataverse instance using the Dataverse API. The metrics include total views, unique views, total downloads, unique downloads, and citations.
