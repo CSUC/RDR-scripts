@@ -1,4 +1,4 @@
-[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/dataset_size_calculator/README.md)  
+[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/dataset_size_calculator/README.md) 
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/dataset_size_calculator/README_ENG.md)  
 
 # Script per calcular la mida dels datasets d'una instància a Dataverse  
