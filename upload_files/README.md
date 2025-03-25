@@ -1,3 +1,6 @@
+[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/upload_files/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/upload_files/README_ENG.md)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/upload_files/upload_files_script.ipynb)
 # Script per a la pujada automàtica de fitxers
 
 Per a qualsevol consulta sobre el codi, poseu-vos en contacte amb rdr-contacte@csuc.cat
