@@ -1,5 +1,6 @@
 [![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/multiple_datasets_metadata/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/multiple_datasets_metadata/README_ENG.md)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/multiple_datasets_metadata/multiple_datasets_metadata_script.ipynb)
 # Extract metadata from multiple datasets of an institution
 
 This script processes and aggregates metadata from various institutions and categories such as citations, geospatial metadata, social, astronomical, biomedical, journal, and others. The results are exported to an Excel file that can be downloaded automatically.
