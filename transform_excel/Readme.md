@@ -1,3 +1,6 @@
+[![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/transform_excel/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/transform_excel/README_ENG.md)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/transform_excel/transform_excel_script.ipynb)
 # Transformar fitxer en format Excel a format CSV
 
 Per a qualsevol consulta sobre el codi, contacta amb rdr-contacte@csuc.cat 
