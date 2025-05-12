@@ -21,7 +21,7 @@ En aquest repositori el [Consorci de Serveis Universitaris de Catalunya (CSUC)](
 - **related_publication_check**: Comprova si un dataset té una publicació relacionada vinculada correctament.
 - **transform_excel**: Transforma fitxers Excel segons formats compatibles amb el repositori.
 - **upload_files**: Automatitza la pujada de fitxers a Dataverse.
-- **verification_readme**: Verifica si el fitxer README compleix certs requisits.
+- **verification_readme**: Verifica si el fitxer README és a dins dels datasets d'una instància.
 
 ## Contacte
 
