@@ -108,7 +108,7 @@ def fetch_metric(doi, metric, base_url):
 
 # ====================== User Input ======================
 SERVER_URL = "https://dataverse.csuc.cat"
-token = input("🔑 Enter your API token (get it from https://dataverse.csuc.cat/dataverseuser.xhtml?selectTab=apiTokenTab): ").strip()
+token = input(" Enter your API token (get it from https://dataverse.csuc.cat/dataverseuser.xhtml?selectTab=apiTokenTab): ").strip()
 
 # Institution list
 institutions = [
@@ -119,7 +119,7 @@ institutions = [
     'IRB', 'IRSICAIXA', 'IRTA', 'ISGLOBAL', 'VHIR'
 ]
 
-print("\n🏛️ Available Institutions:")
+print("\n Available Institutions:")
 for i, name in enumerate(institutions, 1):
     print(f"  {i:2}. {name}")
 print("  0. All institutions")
@@ -143,7 +143,7 @@ data_api = DataAccessApi(SERVER_URL, token)
 # ====================== Main Execution ======================
 metrics_data = []
 
-print("\n🔍 Gathering metrics...")
+print("\n Gathering metrics...")
 
 for institution in selected_institutions:
     print(f"📡 Processing institution: {institution}")
@@ -174,4 +174,4 @@ filename = f"dataverse_metrics_{timestamp}.xlsx"
 df.to_excel(filename, index=False)
 
 # Done
-print(f"\n✅ Export complete! Metrics saved to: {filename}")
+print(f"\n Export complete! Metrics saved to: {filename}")
