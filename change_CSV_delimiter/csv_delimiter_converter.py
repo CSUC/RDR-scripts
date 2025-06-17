@@ -45,7 +45,7 @@ def process_csv(byte_content, original_filename):
 # Main processing function
 def process_files():
     if not os.path.exists(input_directory):
-        print(f"❌ Input directory '{input_directory}' does not exist.")
+        print(f" Input directory '{input_directory}' does not exist.")
         return
 
     os.makedirs(output_directory, exist_ok=True)
@@ -67,11 +67,11 @@ def process_files():
                 processed_count += 1
 
     if processed_count == 0:
-        print("⚠️ No .csv files were processed.")
+        print(" No .csv files were processed.")
     else:
         zip_path = shutil.make_archive(output_directory, 'zip', output_directory)
-        print(f"✅ Successfully processed {processed_count} file(s).")
-        print(f"📦 Zipped output available at: {zip_path}")
+        print(f" Successfully processed {processed_count} file(s).")
+        print(f" Zipped output available at: {zip_path}")
 
 if __name__ == "__main__":
     print("=== CSV Converter ===")
