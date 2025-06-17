@@ -56,3 +56,27 @@ L'script realitza els següents controls i avaluacions sobre el conjunt de dades
 
 Per a qualsevol consulta o problema relatiu al procés d'avaluació, poseu-vos en contacte amb el mantenidor de l'script.
 
+
+## Terminal usage (no iPython Notebook) 
+
+### Install virtual environment
+```shell
+cd REVISAT
+python3 -m venv venv
+```
+
+### Install dependencies (through requirements.txt)
+```shell
+venv/bin/pip3 install -r requirements.txt
+```
+
+### Run script and extract data
+Extract API token from Dataverse profile, create the file `DATAVERSE.txt` with the token in it (using file is not 
+recorded in terminal history!).
+
+```shell
+TOKEN="$(cat secrets/DATAVERSE.txt)"
+venv/bin/python3 main.py --doi doi:67.37297/data2103 --token "${TOKEN}" > README_new.md
+```
+
+
