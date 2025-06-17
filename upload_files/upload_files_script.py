@@ -41,10 +41,10 @@ def upload_files(base_url, token, doi, excel_file_name):
         for row in files_metadata:
             file_path = Path(row[0])
             if not file_path.is_file():
-                print("❌ File not found:", row[0])
+                print(" File not found:", row[0])
                 all_exist = False
         if not all_exist:
-            print("⚠️ Some files are missing. Please check paths.")
+            print("⚠ Some files are missing. Please check paths.")
             return
 
         dataset = api.get_dataset(doi)
@@ -59,11 +59,11 @@ def upload_files(base_url, token, doi, excel_file_name):
             if not pd.isna(row[3]):
                 df.set({"categories": [cat.strip() for cat in row[3].split(",")]})
             resp = api.upload_datafile(doi, file_name, df.json())
-            print("✅ Uploaded:", file_name)
+            print(" Uploaded:", file_name)
     except FileNotFoundError:
-        print("❌ Metadata file not found:", excel_file_name)
+        print(" Metadata file not found:", excel_file_name)
     except Exception as e:
-        print("⚠️ Upload failed:", e)
+        print(" Upload failed:", e)
 
 # ========== Run Upload ==========
 upload_files(BASE_URL, TOKEN, DOI, EXCEL_FILE_NAME)
@@ -78,7 +78,7 @@ def filemetadata(base_url, token, doi, keys_out, values_out):
             keys_out.append(list(filemeta.keys()))
             values_out.append(list(filemeta.values()))
     except KeyError:
-        print("⚠️ Error reading file metadata for dataset:", doi)
+        print(" Error reading file metadata for dataset:", doi)
 
 filemetadata_keys = []
 filemetadata_values = []
@@ -112,5 +112,5 @@ sizes = [get_size(entry, filemetadata_keys[i]) for i, entry in enumerate(filemet
 total_original_size_bytes = sum(sizes)
 total_archival_size_bytes = sum(entry[filesize_index] for entry in filemetadata_values if isinstance(entry[filesize_index], int))
 
-print("\n📦 Total original format dataset size:", format_size(total_original_size_bytes))
-print("🗃️ Total archival format dataset size:", format_size(total_archival_size_bytes))
+print("\n Total original format dataset size:", format_size(total_original_size_bytes))
+print(" Total archival format dataset size:", format_size(total_archival_size_bytes))
