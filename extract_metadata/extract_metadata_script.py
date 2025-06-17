@@ -136,7 +136,7 @@ if not token or not identifier:
     print("❗ Please provide both `token` and `identifier` at the top of the script.")
     sys.exit(1)
 
-print("🔄 Connecting to Dataverse API...")
+print("Connecting to Dataverse API...")
 api = NativeApi(base_url, token)
 data_api = DataAccessApi(base_url, token)
 path = doi.replace("doi:10.34810/", "")
@@ -146,7 +146,7 @@ citation_keys, geo_keys, social_keys, astronomy_keys, biomedical_keys, journal_k
 citation_values, geo_values, social_values, astronomy_values, biomedical_values, journal_values, computationalworkflow_values, LocalContextsCVoc_values, darwincore_values = [[] for _ in range(9)]
 
 # Extract and organize metadata
-print("📦 Fetching metadata...")
+print("Fetching metadata...")
 export_metadata(api, doi,
                 citation_keys, citation_values,
                 geo_keys, geo_values,
@@ -179,4 +179,4 @@ excel_file = path + '_metadata.xlsx'
 df.to_csv(csv_file, index=False)
 df.to_excel(excel_file, index=False)
 
-print(f"✅ Metadata exported to:\n  📄 {csv_file}\n  📊 {excel_file}")
+print(f" Metadata exported to:\n  📄 {csv_file}\n   {excel_file}")
