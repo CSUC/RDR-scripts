@@ -626,5 +626,3 @@ df.to_excel(excel_filename, index=False)
 
 print(f"Metadata saved to {excel_filename}")
 
-# If you want to enable downloading via a simple script or GUI,
-# you can handle that outside of this script.
