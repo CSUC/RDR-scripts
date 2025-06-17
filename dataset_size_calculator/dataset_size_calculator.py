@@ -125,7 +125,7 @@ def format_size(size):
 def main():
     base_url = "https://dataverse.csuc.cat/"
 
-    print("🔑 Enter your Dataverse API token:")
+    print(" Enter your Dataverse API token:")
     token = input("> ").strip()
     config = Config(api_url=base_url, logger=logger, token=token)
 
@@ -138,18 +138,18 @@ def main():
         'ISGLOBAL', 'VHIR'
     ]
 
-    print("\n🏢 Enter institution codes separated by commas (or type 'all'):")
+    print("\n Enter institution codes separated by commas (or type 'all'):")
     print(f"Available: {', '.join(institutions)}")
     user_input = input("> ").strip().upper()
     selected = institutions if user_input == 'ALL' else [i.strip() for i in user_input.split(',') if i.strip() in institutions]
 
     if not selected:
-        print("⚠️ No valid institutions selected.")
+        print(" No valid institutions selected.")
         return
 
     data = []
     for inst in selected:
-        print(f"🔍 Processing institution: {inst}")
+        print(f" Processing institution: {inst}")
         processor = DatasetProcessor(config, inst)
         processor.create_list_datasets(inst)
 
@@ -174,7 +174,7 @@ def main():
     # Save to Excel
     output_file = "datasets_sizes.xlsx"
     df.to_excel(output_file, index=False)
-    print(f"\n✅ Data saved to {output_file}")
+    print(f"\n Data saved to {output_file}")
     print(df)
 
 if __name__ == "__main__":
