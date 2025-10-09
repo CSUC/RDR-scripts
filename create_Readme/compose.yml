@@ -1,0 +1,22 @@
+services:
+  create_readme:
+    image: docker.io/jenkins/jenkins:lts
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: create_readme
+    environment:
+      - DOI=$DOI
+      - LANG=$LANG
+      - URL=$URL
+      - OUTPUT_PATH=/output
+    secrets:
+      - DATAVERSE_TOKEN
+    volumes:
+      - ./output:/output
+
+
+secrets:
+  DATAVERSE_TOKEN:
+    file: ./secrets/DATAVERSE_TOKEN
+
