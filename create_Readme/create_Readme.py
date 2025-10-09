@@ -1,8 +1,8 @@
+
 import os
 import subprocess
 import sys
 import re
-
 
 def read_secret(path):
     try:

@@ -1,5 +1,7 @@
 [![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/create_Readme/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/create_Readme/README_ENG.md)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/create_Readme/create_Readme_script.ipynb)
+
 # Script per crear un fitxer Readme d'un dataset a Dataverse
 Per a qualsevol consulta sobre el codi, poseu-vos en contacte amb rdr-contacte@csuc.cat
 
@@ -41,7 +43,7 @@ Aquest script està dissenyat per interactuar amb el Repositori de dades de rece
 ## Exemple d'Ús
 ```python
 # Estableix el DOI i el token
-doi = 'doi:10.34810/dataXXX'
-token = 'el_teul_propi_token'
+doi = 'XYZ'
+token = 'el_teu_propi_token'
 
 # Executa l'script

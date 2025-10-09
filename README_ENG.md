@@ -8,12 +8,20 @@ In this repository the [Consortium of University Services of Catalonia (CSUC)](h
 
 ## Description of the scripts
 
-- **Create README.txt files**: This script creates a README.txt file automatically using the metadata in a dataset record.
-- **Automatic file upload**: This script uploads files automatically to a dataset record in a Dataverse repository.
-- **Moving datasets between Dataverses**: This script moves datasets between different Dataverses in a Dataverse repository.
-- **Extract metadata in a tabular file**: This script downloads the metadata of a dataset in tabular format.
-- **REVISAT**: This script automates and facilitates the review of a dataset using most of the [REVISAT criteria](https://confluence.csuc.cat/display/RDM/REVISAT).
-- **Download full datasets**: This script downloads a dataset from a Dataverse repository.
+- **REVISAT**: Automates the review of a dataset based on the [REVISAT](https://confluence.csuc.cat/display/RDM/REVISAT) checklist.
+- **change_CSV_delimiter**: Changes the delimiter of CSV files.
+- **create_Readme**: Automatically generates a README file based on the dataset metadata.
+- **dataset_size_calculator**: Calculates the total size of a dataset.
+- **extract_metadata**: Extracts metadata from datasets and saves it in tabular format.
+- **metrics**: Retrieves usage or download metrics for datasets.
+- **move_dataset**: Allows moving datasets between different Dataverse instances.
+- **multiple_datasets_metadata**: Extracts metadata from multiple datasets in bulk.
+- **persistent_link**: Checks and displays the correct persistent link of a dataset or file.
+- **related_publication_check**: Checks whether a dataset has a properly linked related publication.
+- **transform_excel**: Transforms Excel files into formats compatible with the repository.
+- **upload_files**: Automates the upload of files to Dataverse.
+- **verification_readme**: Verifies whether the README file is included in the datasets of an instance.
+
 
 ## Contact
 If you have questions or comments about these scripts open an issue or send an e-mail to <aco@csuc.cat>.

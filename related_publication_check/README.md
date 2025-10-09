@@ -1,5 +1,6 @@
 [![ca](https://img.shields.io/badge/lang-ca-blue.svg)](https://github.com/CSUC/RDR-scripts/blob/main/related_publication_check/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/CSUC/RDR-scripts/blob/main/related_publication_check/README_ENG.md)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/related_publication_check/related_publication_check_script.ipynb)
 # Script per a la Generació de Metadades de Publicacions Relacionades
 Per a qualsevol consulta sobre el codi, poseu-vos en contacte amb rdr-contacte@csuc.cat
 
