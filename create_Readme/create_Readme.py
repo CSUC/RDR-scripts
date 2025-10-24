@@ -1,13 +1,33 @@
-# Parameters required for this script
-token = ""
-doi = "" # DOI in format "doi:10.34810/dataXXX"
-lang = "" #language of the Readme file
-base_url = "https://dataverse.csuc.cat/"
 
 import os
 import subprocess
 import sys
 import re
+
+def read_secret(path):
+    try:
+        with open(path, "r") as f:
+            return f.read().strip()
+    except Exception as e:
+        raise RuntimeError(f"Failed to read secret from {path}: {e}")
+
+
+# Load token from Docker secret
+token = read_secret("/run/secrets/DATAVERSE_TOKEN")  # Do not allow hardcoded credentials...
+
+doi = os.environ.get("DOI")
+lang = os.environ.get("LANG", "english")
+base_url = os.environ.get("BASE_URL", "https://dataverse.csuc.cat/")
+output_path = os.environ.get("OUTPUT_PATH")
+
+# Example usage
+print("✅ Token, DOI, LANG, BASE_URL and OUTPUT_PATH loaded successfully")
+print(f"TOKEN (first 5 chars): {token[:5]}...")
+print(f"DOI: {doi}")
+print(f"LANG: {lang}")
+print(f"BASE_URL: {base_url}")
+print(f"OUTPUT_PATH: {output_path}")
+
 
 # Function to install required packages
 def install_packages():
@@ -275,8 +295,12 @@ def createreadme(base_url, token, doi, language,
     # Retrieve dataset metadata
     dataset = api.get_dataset(doi)
 
-    # Extract path from DOI
-    path = doi.replace("doi:10.34810/", "")
+    # Extract path from DOI if not provided
+    if output_path is None:
+        path = doi.replace("doi:10.34810/", "")
+    else:
+        path = output_path
+
 
     try:
         # Create directory if it does not exist
