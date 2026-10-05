@@ -56,50 +56,95 @@ from pyDataverse.api import NativeApi
 native_api = NativeApi(base_url, token)
 
 # Functions to extract values of a metadata JSON
-def extract_value(data_dict):
+def extract_value(data):
     """
-    Function to extract all keys and values from a JSON metadata dictionary.
+    Recursively extracts typeName/value pairs from Dataverse metadata.
 
-    Parameters:
-    - data_dict: dict. JSON metadata dictionary.
-
-    Returns:
-    - type_names: list. List of type names extracted from the metadata.
-    - values: list. List of values extracted from the metadata.
+    For authorAffiliation:
+    - Uses expandedvalue['termName'] when available.
+    - Falls back to the normal 'value' for older records.
     """
-    if isinstance(data_dict, dict):
-        type_names = []
-        values = []
-        for key, value in data_dict.items():
-            if key == 'typeName' and 'value' in data_dict:
-                if isinstance(data_dict['value'], list):
-                    for v in data_dict['value']:
-                        type_names.append(data_dict['typeName'])
-                        values.append(v)
-                else:
-                    type_names.append(data_dict['typeName'])
-                    values.append(data_dict['value'])
-            elif isinstance(value, dict) and 'typeName' in value and 'value' in value:
-                type_names.append(value['typeName'])
-                values.append(value['value'])
-            elif isinstance(value, str) and key == 'typeName':
-                type_names.append(value)
-                values.append(value)
+
+    type_names = []
+    values = []
+
+    if isinstance(data, list):
+        for item in data:
+            sub_keys, sub_values = extract_value(item)
+            type_names.extend(sub_keys)
+            values.extend(sub_values)
+
+        return type_names, values
+
+    if not isinstance(data, dict):
+        return type_names, values
+
+    # If this is a Dataverse metadata field
+    if 'typeName' in data and 'value' in data:
+
+        type_name = data['typeName']
+        value = data['value']
+
+        # --------------------------------------------------
+        # SPECIAL CASE: authorAffiliation
+        # --------------------------------------------------
+        if type_name == 'authorAffiliation':
+
+            expanded = data.get('expandedvalue')
+
+            if isinstance(expanded, dict):
+                term_name = expanded.get('termName')
+
+                if term_name:
+                    type_names.append(type_name)
+                    values.append(term_name)
+                    return type_names, values
+
+            # Fallback for old metadata without expandedvalue
+            type_names.append(type_name)
+            values.append(value)
+
+            return type_names, values
+
+        # --------------------------------------------------
+        # COMPOUND FIELD
+        # Example: author
+        # --------------------------------------------------
+        if isinstance(value, (dict, list)):
+
+            # List of simple values
+            if isinstance(value, list) and all(
+                not isinstance(v, (dict, list)) for v in value
+            ):
+                for v in value:
+                    type_names.append(type_name)
+                    values.append(v)
+
             else:
-                extracted_type_names, extracted_values = extract_value(value)
-                type_names += extracted_type_names
-                values += extracted_values
+                # Compound metadata: recursively inspect children
+                sub_keys, sub_values = extract_value(value)
+                type_names.extend(sub_keys)
+                values.extend(sub_values)
+
+            return type_names, values
+
+        # --------------------------------------------------
+        # NORMAL PRIMITIVE FIELD
+        # --------------------------------------------------
+        type_names.append(type_name)
+        values.append(value)
+
         return type_names, values
-    elif isinstance(data_dict, list):
-        type_names = []
-        values = []
-        for item in data_dict:
-            extracted_type_names, extracted_values = extract_value(item)
-            type_names += extracted_type_names
-            values += extracted_values
-        return type_names, values
-    else:
-        return [], []
+
+    # Generic recursion for other dictionaries
+    for value in data.values():
+
+        if isinstance(value, (dict, list)):
+            sub_keys, sub_values = extract_value(value)
+            type_names.extend(sub_keys)
+            values.extend(sub_values)
+
+    return type_names, values
         
 def exportmetadata(base_url, token, doi,
                    citation_keys, citation_values,
