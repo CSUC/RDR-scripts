@@ -1,6 +1,6 @@
 [![ca](https://img.shields.io/badge/lang-ca-blue.svg)](README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](README_ENG.md)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]([REPLACE_WITH_COLAB_URL](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/replace_files/replace_files.ipynb))
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CSUC/RDR-scripts/blob/main/replace_files/replace_files.ipynb)
 
 # Script per reemplaçar fitxers d'un dataset a Dataverse
 
